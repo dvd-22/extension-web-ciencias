@@ -1,0 +1,171 @@
+/* Web Ciencias Appearance Modifier - Custom Styles */
+
+/* Only apply styles when extension is active */
+body.web-ciencias-extension-active {
+  /* Improve overall page readability */
+  line-height: 1.6 !important;
+  font-smoothing: antialiased !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Enhanced header styling */
+body.web-ciencias-extension-active header,
+body.web-ciencias-extension-active .header {
+  background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%) !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+}
+
+/* Improve navigation */
+body.web-ciencias-extension-active nav a,
+body.web-ciencias-extension-active .nav a,
+body.web-ciencias-extension-active .menu a {
+  transition: all 0.3s ease !important;
+  border-radius: 4px !important;
+  padding: 8px 12px !important;
+}
+
+body.web-ciencias-extension-active nav a:hover,
+body.web-ciencias-extension-active .nav a:hover,
+body.web-ciencias-extension-active .menu a:hover {
+  background-color: rgba(255,255,255,0.1) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Enhanced content areas */
+body.web-ciencias-extension-active .content,
+body.web-ciencias-extension-active main,
+body.web-ciencias-extension-active .main-content {
+  background: #ffffff !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.05) !important;
+  padding: 20px !important;
+  margin: 20px auto !important;
+  max-width: 1200px !important;
+}
+
+/* Improve buttons */
+body.web-ciencias-extension-active button,
+body.web-ciencias-extension-active input[type="submit"],
+body.web-ciencias-extension-active input[type="button"],
+body.web-ciencias-extension-active .button {
+  background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 6px !important;
+  padding: 10px 20px !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  font-weight: 500 !important;
+}
+
+body.web-ciencias-extension-active button:hover,
+body.web-ciencias-extension-active input[type="submit"]:hover,
+body.web-ciencias-extension-active input[type="button"]:hover,
+body.web-ciencias-extension-active .button:hover {
+  background: linear-gradient(135deg, #1976D2 0%, #1565C0 100%) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(33,150,243,0.3) !important;
+}
+
+/* Enhanced forms */
+body.web-ciencias-extension-active input[type="text"],
+body.web-ciencias-extension-active input[type="email"],
+body.web-ciencias-extension-active input[type="password"],
+body.web-ciencias-extension-active textarea,
+body.web-ciencias-extension-active select {
+  border: 2px solid #e0e0e0 !important;
+  border-radius: 6px !important;
+  padding: 10px 12px !important;
+  transition: all 0.3s ease !important;
+  font-size: 14px !important;
+}
+
+body.web-ciencias-extension-active input[type="text"]:focus,
+body.web-ciencias-extension-active input[type="email"]:focus,
+body.web-ciencias-extension-active input[type="password"]:focus,
+body.web-ciencias-extension-active textarea:focus,
+body.web-ciencias-extension-active select:focus {
+  border-color: #2196F3 !important;
+  box-shadow: 0 0 0 3px rgba(33,150,243,0.1) !important;
+  outline: none !important;
+}
+
+/* Improve typography */
+body.web-ciencias-extension-active h1,
+body.web-ciencias-extension-active h2,
+body.web-ciencias-extension-active h3,
+body.web-ciencias-extension-active h4,
+body.web-ciencias-extension-active h5,
+body.web-ciencias-extension-active h6 {
+  color: #1565C0 !important;
+  font-weight: 600 !important;
+  margin-bottom: 15px !important;
+}
+
+/* Enhanced links */
+body.web-ciencias-extension-active a {
+  color: #1976D2 !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+}
+
+body.web-ciencias-extension-active a:hover {
+  color: #0D47A1 !important;
+  text-decoration: underline !important;
+}
+
+/* Improve tables */
+body.web-ciencias-extension-active table {
+  border-collapse: collapse !important;
+  width: 100% !important;
+  margin: 15px 0 !important;
+  background: white !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05) !important;
+}
+
+body.web-ciencias-extension-active table th {
+  background: #f5f5f5 !important;
+  padding: 12px !important;
+  text-align: left !important;
+  font-weight: 600 !important;
+  color: #333 !important;
+}
+
+body.web-ciencias-extension-active table td {
+  padding: 12px !important;
+  border-bottom: 1px solid #eee !important;
+}
+
+/* Enhanced footer */
+body.web-ciencias-extension-active footer,
+body.web-ciencias-extension-active .footer {
+  background: #37474F !important;
+  color: #ffffff !important;
+  padding: 30px 20px !important;
+  margin-top: 40px !important;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  body.web-ciencias-extension-active .content,
+  body.web-ciencias-extension-active main,
+  body.web-ciencias-extension-active .main-content {
+    margin: 10px !important;
+    padding: 15px !important;
+    border-radius: 6px !important;
+  }
+}
+
+/* Loading animation for better UX */
+body.web-ciencias-extension-active .loading {
+  animation: pulse 1.5s ease-in-out infinite !important;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
