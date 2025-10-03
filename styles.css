@@ -1,0 +1,18 @@
+body {
+  background: #222 !important;
+  color: #fff !important;
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+}
+header, nav, footer {
+  background: #333 !important;
+}
+input, button {
+  border-radius: 6px !important;
+  border: 1px solid #555 !important;
+  padding: 8px !important;
+  background: #444 !important;
+  color: #eee !important;
+}
+a {
+  color: #79b8ff !important;
+}
