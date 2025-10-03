@@ -1,15 +1,47 @@
 {
   "manifest_version": 3,
-  "name": "Facultad de Ciencias Customizer",
-  "description": "Cambia la apariencia del portal de servicios en línea de la Facultad de Ciencias.",
-  "version": "1.0",
-  "icons": { "128": "icon-128.jpg" },
+  "name": "UNAM Ciencias - Personalizador Visual",
+  "description": "Mejora la experiencia visual del portal de servicios estudiantiles de la Facultad de Ciencias UNAM. Privacidad garantizada: sin recopilación de datos.",
+  "version": "1.0.0",
+  "icons": {
+    "16": "icon-16.jpg",
+    "32": "icon-32.jpg",
+    "48": "icon-48.jpg",
+    "128": "icon-128.jpg"
+  },
   "content_scripts": [
     {
-      "matches": ["https://web.fciencias.unam.mx/*"],
-      "js": ["content.js"],
-      "css": ["styles.css"]
+      "matches": [
+        "https://web.fciencias.unam.mx/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_end"
     }
   ],
-  "permissions": []
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "UNAM Ciencias - Personalizador Visual",
+    "default_icon": {
+      "16": "icon-16.jpg",
+      "32": "icon-32.jpg",
+      "48": "icon-48.jpg",
+      "128": "icon-128.jpg"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://web.fciencias.unam.mx/*"
+  ],
+  "homepage_url": "https://github.com/dvd-22/extension-web-ciencias"
 }
