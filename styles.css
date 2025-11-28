@@ -123,7 +123,7 @@ body.fciencias-customizer-active #contenido {
 	box-sizing: border-box !important;
 	display: grid !important;
 	grid-template-columns: 240px 1fr !important;
-	gap: 30px !important;
+	gap: 0px !important;
 	align-items: start !important;
 }
 
@@ -164,10 +164,17 @@ body.fciencias-customizer-active #info-contenido2 {
 }
 
 /* Form Styles */
+body.fciencias-customizer-active form {
+	width: 100% !important;
+	max-width: 500px !important;
+	margin: 0 auto !important;
+}
+
 body.fciencias-customizer-active fieldset {
 	border: none !important;
 	padding: 0 !important;
 	margin: 0 !important;
+	width: 100% !important;
 }
 
 body.fciencias-customizer-active legend {
@@ -189,6 +196,24 @@ body.fciencias-customizer-active label.control-label {
 	font-weight: 600 !important;
 	color: #333333 !important;
 	font-size: 14px !important;
+}
+
+/* Checkboxes and Radio Buttons */
+body.fciencias-customizer-active input[type="checkbox"],
+body.fciencias-customizer-active input[type="radio"] {
+	width: auto !important;
+	display: inline-block !important;
+	margin-right: 6px !important;
+	vertical-align: middle !important;
+}
+
+body.fciencias-customizer-active input[type="checkbox"] + label,
+body.fciencias-customizer-active input[type="radio"] + label,
+body.fciencias-customizer-active label[for] {
+	display: inline !important;
+	font-weight: normal !important;
+	margin-bottom: 0 !important;
+	vertical-align: middle !important;
 }
 
 /* Input Fields */
@@ -478,6 +503,7 @@ body.fciencias-customizer-active .menu-interna {
 	width: 100% !important;
 	margin-bottom: 20px !important;
 	border-top: 3px solid #fdb913 !important;
+	order: 1 !important;
 }
 
 body.fciencias-customizer-active .menu-interna ul {
@@ -541,6 +567,7 @@ body.fciencias-customizer-active .info-estudiantes {
 	background: transparent !important;
 	overflow: hidden !important;
 	width: 100% !important;
+	order: 2 !important;
 }
 
 body.fciencias-customizer-active #info-contenido {
