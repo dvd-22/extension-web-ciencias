@@ -6,3 +6,5 @@
 # Ignore all HTML files except popup.html
 *.html
 !popup.html
+
+*.psd
