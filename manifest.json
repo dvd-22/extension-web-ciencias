@@ -1,12 +1,13 @@
 {
-  "manifest_version": 3,"name": "Web Fac Ciencias - Mas bonita",
+  "manifest_version": 3,
+  "name": "Web Fac Ciencias - Mas bonita",
   "description": "Mejora la experiencia visual del portal de servicios estudiantiles.",
   "version": "1.0.0",
   "browser_specific_settings": {
     "gecko": {
       "id": "unam-ciencias-personalizador@fciencias.unam.mx",
-      "strict_min_version": "109.0",
-      "data_collection_permissions": false
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {}
     }
   },
   "icons": {
@@ -40,8 +41,9 @@
     }
   },
   "background": {
-    "service_worker": "background.js",
-    "scripts": ["background.js"]
+    "scripts": [
+      "background.js"
+    ]
   },
   "permissions": [
     "activeTab",
